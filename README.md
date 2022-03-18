@@ -23,6 +23,6 @@ An easy to use template for making HD mod maps in Farming Simulator 22
 - The first 20 seconds of game play (after the loading screen) may stutter. Give everything time to load in and this issue goes away.
 
 # To do
-- Finish adding all combined layers to the map.xml so they can all be used in game. (currently in progress.)
+- Finish adding all combined layers to the map.xml so they can all be used from the build menu in game. (currently in progress.)
 
 # If you like this, you are free to change and use it. But please give me credit in your source code.
