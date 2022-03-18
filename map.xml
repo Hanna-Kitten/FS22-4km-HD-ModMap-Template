@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<map width="4096" height="4096" imageFilename="$data/maps/mapUS/overview.png"  mapFieldColor="0.1500 0.1195 0.0953" mapGrassFieldColor="0.1470 0.1441 0.0823">
+    <filename>$data/maps/mapUS/map.i3d</filename>
+    <vertexBufferMemoryUsage>136077568</vertexBufferMemoryUsage>
+    <indexBufferMemoryUsage>19387392</indexBufferMemoryUsage>
+    <textureMemoryUsage>778895360</textureMemoryUsage>
+
+    <culling xzOffset="100" />
+    <densityMap revision="1" />
+    <terrainLodTexture revision="1" />
+    <splitShapes revision="2" />
+    <tipCollision revision="2" />
+    <placementCollision revision="2" />
+    <navigationCollision revision="3" />
+
+    <shop filename="$data/store/ui/shop.xml" />
+    <storeItems filename="$data/maps/mapUS/storeItems.xml" />
+
+    <guidedTour filename="$data/maps/mapUS/guidedTour.xml" />
+
+    <sounds filename="$data/maps/mapUS/sound.xml" />
+    <environment filename="$data/maps/mapUS/environment.xml" />
+    <growth filename="$data/maps/maps_growth.xml" />
+    <weed filename="$data/maps/mapUS/weed.xml" />
+    <fieldGround filename="$data/maps/mapUS/fieldGround.xml" />
+    <farmlands filename="$data/maps/mapUS/farmlands.xml" />
+
+    <animals filename="$dataS/character/animals.xml">
+        <names filename="$dataS/character/animalNames.xml" />
+        <food filename="$dataS/character/animalFood.xml" />
+    </animals>
+    <wildlife filename="$dataS/character/wildlifeSpawner.xml" />
+    <npcs filename="$data/maps/mapUS/npcs.xml" />
+    <!-- <helpers filename="$data/maps/maps_helpers.xml" /> -->
+
+    <missionVehicles filename="$dataS/missionVehicles.xml" />
+
+    <licensePlates filename="$data/maps/mapUS/licensePlates/licensePlatesUS.xml"/>
+
+    <helpline filename="$dataS/helpLine.xml">
+        <trigger position="161 85.7 146"   categoryIndex="2" pageIndex="1" /> <!-- buying fields and farming -->
+        <trigger position="214 85.3 216"   categoryIndex="3" pageIndex="1" /> <!-- improving yield -->
+        <trigger position="235.5 83.3 176" categoryIndex="8" pageIndex="2" /> <!-- build mode -->
+        <trigger position="158 88.3 99"    categoryIndex="8" pageIndex="3" /> <!-- carry objects -->
+
+        <trigger position="-585 83.3 -261" categoryIndex="6" pageIndex="1" /> <!-- animals -->
+        <trigger position="61 86.2 -6"     categoryIndex="8" pageIndex="1" /> <!-- wardrobe -->
+        <trigger position="848 86 42"      categoryIndex="1" pageIndex="2" /> <!-- shop -->
+        <trigger position="980 88.25 422"  categoryIndex="4" pageIndex="7" /> <!-- grape -->
+    </helpline>
+
+    <gameplayHints filename="$dataS/gameplayHints.xml" />
+    <collectibles filename="$data/maps/mapUS/collectibles.xml" />
+
+    <hotspots>
+        <placeableHotspot type="SHOP_ANIMAL" text="$l10n_animals_dealer" worldPosition="-581.462 -322.725" teleportWorldPosition="-581.462 82 -322.725" />
+        <placeableHotspot type="SHOP" text="$l10n_vehicle_shop" worldPosition="847.5 34.5" teleportWorldPosition="847.5 0 34.5" />
+    </hotspots>
+
+    <!-- <competitiveMultiplayer filename="$data/maps/mapUS/competitiveMultiplayer.xml" /> -->
+    <!-- <fillTypes filename="$data/maps/mapUS/maps_fillTypes.xml" /> -->
+    <!-- <sprayTypes filename="$data/maps/mapUS/maps_sprayTypes.xml" /> -->
+    <!-- <fruitTypes filename="$data/maps/mapUS/maps_fruitTypes.xml" /> -->
+    <!-- <treeTypes filename="$data/maps/mapUS/maps_treeTypes.xml" /> -->
+    <!-- <densityMapHeightTypes filename="$data/maps/mapUS/maps_densityMapHeightTypes.xml" /> -->
+
+    <motionPathEffects filename="$data/effects/motionPathEffects.xml"/>
+    <bales filename="$data/maps/maps_bales.xml"/>
+
+    <additionalFiles>
+        <additionalFile filename="$data/shared/materialHolders/tensionBeltMaterialHolder.i3d" />
+        <additionalFile filename="$data/shared/materialHolders/tireTrackMaterialHolder.i3d" />
+        <additionalFile filename="$data/shared/mapTargetMarker.i3d" />
+        <additionalFile filename="$data/fillPlanes/fillPlane_materialHolder.i3d" />
+        <additionalFile filename="$data/effects/effects.xml" />
+    </additionalFiles>
+
+    <!-- add all foliage layers that are not fruits. You need to define these foliage layers to be able to remove them with a cultivator or plow -->
+    <decoFoliages>
+        <decoFoliage layerName="decoFoliage" startChannel="0" numChannels="4" mowable="true"/>
+        <decoFoliage layerName="decoForest" startChannel="0" numChannels="4" mowable="true"/>
+        <decoFoliage layerName="decoBush" startChannel="0" numChannels="4" />
+
+        <mapping name="grassShort" layerName="decoFoliage" state="9" />
+    </decoFoliages>
+
+    <paintableFoliages>
+        <paintableFoliage layerName="grass" startChannel="0" numStateChannels="4" />
+        <paintableFoliage layerName="meadow" startChannel="0" numStateChannels="4" />
+        <paintableFoliage layerName="decoBush" startChannel="0" numStateChannels="4" />
+        <paintableFoliage layerName="decoFoliage" startChannel="0" numStateChannels="4" />
+    </paintableFoliages>
+
+    <!-- paintable ground types - need to be defined in map.i3d node TerrainTransformGroup|CombinedLayer -->
+    <groundTypeMappings>
+    <!-- Base -->
+        <groundTypeMapping type="USdirt"           title="DIRT (US)" layer="US_DIRT" />
+
+        <groundTypeMapping type="FRdirt"           title="DIRT (FR)" layer="FR_DIRT" />
+
+        <groundTypeMapping type="ALPdirt"           title="ROUGH DIRT (ALP)" layer="ALP_ROUGHDIRT" />
+    <!-- Standard -->
+        <groundTypeMapping type="USasphalt"        title="CONCRETE (US)" layer="US_CONCRETE" />  <!-- fallback to layer concrete for placeables using "asphalt" -->
+        <groundTypeMapping type="USgravel"         title="GRAVEL (US)" layer="US_GRAVEL" />
+        <groundTypeMapping type="USgrass"          title="GRASS (US)" layer="US_GRASS" />
+        <groundTypeMapping type="USgrassDry"       title="DRY GRASS (US)" layer="US_GRASSDRY" />
+        <groundTypeMapping type="USanimalMud"      title="ANIMAL MUD (US)" layer="US_ANIMALMUD" />
+        <groundTypeMapping type="USconcrete"       title="CONCRETE (US)" layer="US_CONCRETE" />
+
+        <groundTypeMapping type="FRasphalt"        title="ASPHALT (FR)" layer="FR_ASPHALT" />
+        <groundTypeMapping type="FRgravel"         title="GRAVEL (FR)" layer="FR_GRAVEL" />
+        <groundTypeMapping type="FRgrass"          title="GRASS (FR)" layer="FR_GRASS" />
+        <groundTypeMapping type="FRanimalMud"      title="ANIMAL MUD (FR)" layer="FR_ANIMALMUD" />
+        <groundTypeMapping type="FRconcrete"       title="CONCRETE (FR)" layer="FR_CONCRETE" />
+
+        <groundTypeMapping type="ALPasphalt"        title="ASPHALT (ALP)" layer="ALP_ASPHALT" />
+        <groundTypeMapping type="ALPgravel"         title="GRAVEL (ALP)" layer="ALP_GRAVEL" />
+        <groundTypeMapping type="ALPgrass"          title="GRASS (ALP)" layer="ALP_GRASS" />
+        <groundTypeMapping type="ALPanimalMud"      title="ANIMAL MUD (ALP)" layer="ALP_ANIMALMUD" />
+        <groundTypeMapping type="ALPconcrete"       title="CONCRETE (ALP)" layer="ALP_CONCRETE" />
+    <!-- Special -->
+        <groundTypeMapping type="USforestGround"   title="FOREST GROUND (US)" layer="US_FORESTGROUND" />
+
+        <groundTypeMapping type="FRforestGround"   title="FOREST GROUND (FR)" layer="FR_FORESTGROUND" />
+        <groundTypeMapping type="FRgrassDry"      title="GRASS DIRT (FR)" layer="FR_GRASSDIRT" />
+        <groundTypeMapping type="FRrock"           title="MOUNTAIN ROCK (FR)" layer="FR_MOUNTAINROCK" />
+        <groundTypeMapping type="FRrockGranite"   title="MOUNTAIN ROCK DARK (FR)" layer="FR_MOUNTROCKDARK" />
+
+        <groundTypeMapping type="ALPforestGround"   title="FOREST GROUND (ALP)" layer="ALP_FORESTNEEDLES" />
+        <groundTypeMapping type="ALProck"           title="MOUNTAIN ROCK (ALP)" layer="ALP_MOUNTAINROCK" />
+    </groundTypeMappings>
+</map>
