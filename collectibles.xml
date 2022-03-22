@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<collectibles achievementName="CollectiblesUS" hotspotThreshold="100">
+
+    <group name="tractor"       target="tractor"        dialogText="$l10n_collectible_us_all_tractor"       moneyReward="100000" />
+    <group name="plow"          target="plow"           dialogText="$l10n_collectible_us_all_plow"          moneyReward="100000" />
+    <group name="seeder"        target="seeder"         dialogText="$l10n_collectible_us_all_seeder"        moneyReward="100000" />
+    <group name="waterTrailer"  target="waterTrailer"   dialogText="$l10n_collectible_us_all_waterTrailer"  moneyReward="100000" />
+    <group name="harvester"     target="harvester"      dialogText="$l10n_collectible_us_all_harvester"     moneyReward="100000" />
+    <group name="trailer"       target="trailer"        dialogText="$l10n_collectible_us_all_trailer"       moneyReward="100000" />
+    <group name="pig"           target="pig"            dialogText="$l10n_collectible_us_all_pig"           moneyReward="100000" />
+    <group name="cow"           target="cow"            dialogText="$l10n_collectible_us_all_cow"           moneyReward="100000" />
+    <group name="sheep"         target="sheep"          dialogText="$l10n_collectible_us_all_sheep"         moneyReward="100000" />
+    <group name="horse"         target="horse"          dialogText="$l10n_collectible_us_all_horse"         moneyReward="100000" />
+
+    <collectible name="tractorRed"          group="tractor"         dialogText="$l10n_collectible_us_tractor"            moneyReward="1000" />
+    <collectible name="plowRed"             group="plow"            dialogText="$l10n_collectible_us_plow"               moneyReward="1000" />
+    <collectible name="seederRed"           group="seeder"          dialogText="$l10n_collectible_us_seeder"             moneyReward="1000" />
+    <collectible name="waterTrailerRed"     group="waterTrailer"    dialogText="$l10n_collectible_us_waterTrailer"       moneyReward="1000" />
+    <collectible name="harvesterRed"        group="harvester"       dialogText="$l10n_collectible_us_harvester"          moneyReward="1000" />
+    <collectible name="trailerRed"          group="trailer"         dialogText="$l10n_collectible_us_trailer"            moneyReward="1000" />
+    <collectible name="pigRed"              group="pig"             dialogText="$l10n_collectible_us_pig"                moneyReward="1000" />
+    <collectible name="cowRed"              group="cow"             dialogText="$l10n_collectible_us_cow"                moneyReward="1000" />
+    <collectible name="sheepRed"            group="sheep"           dialogText="$l10n_collectible_us_sheep"              moneyReward="1000" />
+    <collectible name="horseRed"            group="horse"           dialogText="$l10n_collectible_us_horse"              moneyReward="1000" />
+
+    <collectible name="tractorOrange"       group="tractor"         dialogText="$l10n_collectible_us_tractor"         moneyReward="1000" />
+    <collectible name="plowOrange"          group="plow"            dialogText="$l10n_collectible_us_plow"            moneyReward="1000" />
+    <collectible name="seederOrange"        group="seeder"          dialogText="$l10n_collectible_us_seeder"          moneyReward="1000" />
+    <collectible name="waterTrailerOrange"  group="waterTrailer"    dialogText="$l10n_collectible_us_waterTrailer"    moneyReward="1000" />
+    <collectible name="harvesterOrange"     group="harvester"       dialogText="$l10n_collectible_us_harvester"       moneyReward="1000" />
+    <collectible name="trailerOrange"       group="trailer"         dialogText="$l10n_collectible_us_trailer"         moneyReward="1000" />
+    <collectible name="pigOrange"           group="pig"             dialogText="$l10n_collectible_us_pig"             moneyReward="1000" />
+    <collectible name="cowOrange"           group="cow"             dialogText="$l10n_collectible_us_cow"             moneyReward="1000" />
+    <collectible name="sheepOrange"         group="sheep"           dialogText="$l10n_collectible_us_sheep"           moneyReward="1000" />
+    <collectible name="horseOrange"         group="horse"           dialogText="$l10n_collectible_us_horse"           moneyReward="1000" />
+
+    <collectible name="tractorYellow"       group="tractor"         dialogText="$l10n_collectible_us_tractor"         moneyReward="1000" />
+    <collectible name="plowYellow"          group="plow"            dialogText="$l10n_collectible_us_plow"            moneyReward="1000" />
+    <collectible name="seederYellow"        group="seeder"          dialogText="$l10n_collectible_us_seeder"          moneyReward="1000" />
+    <collectible name="waterTrailerYellow"  group="waterTrailer"    dialogText="$l10n_collectible_us_waterTrailer"    moneyReward="1000" />
+    <collectible name="harvesterYellow"     group="harvester"       dialogText="$l10n_collectible_us_harvester"       moneyReward="1000" />
+    <collectible name="trailerYellow"       group="trailer"         dialogText="$l10n_collectible_us_trailer"         moneyReward="1000" />
+    <collectible name="pigYellow"           group="pig"             dialogText="$l10n_collectible_us_pig"             moneyReward="1000" />
+    <collectible name="cowYellow"           group="cow"             dialogText="$l10n_collectible_us_cow"             moneyReward="1000" />
+    <collectible name="sheepYellow"         group="sheep"           dialogText="$l10n_collectible_us_sheep"           moneyReward="1000" />
+    <collectible name="horseYellow"         group="horse"           dialogText="$l10n_collectible_us_horse"           moneyReward="1000" />
+
+    <collectible name="tractorLime"         group="tractor"         dialogText="$l10n_collectible_us_tractor"           moneyReward="1000" />
+    <collectible name="plowLime"            group="plow"            dialogText="$l10n_collectible_us_plow"              moneyReward="1000" />
+    <collectible name="seederLime"          group="seeder"          dialogText="$l10n_collectible_us_seeder"            moneyReward="1000" />
+    <collectible name="waterTrailerLime"    group="waterTrailer"    dialogText="$l10n_collectible_us_waterTrailer"      moneyReward="1000" />
+    <collectible name="harvesterLime"       group="harvester"       dialogText="$l10n_collectible_us_harvester"         moneyReward="1000" />
+    <collectible name="trailerLime"         group="trailer"         dialogText="$l10n_collectible_us_trailer"           moneyReward="1000" />
+    <collectible name="pigLime"             group="pig"             dialogText="$l10n_collectible_us_pig"               moneyReward="1000" />
+    <collectible name="cowLime"             group="cow"             dialogText="$l10n_collectible_us_cow"               moneyReward="1000" />
+    <collectible name="sheepLime"           group="sheep"           dialogText="$l10n_collectible_us_sheep"             moneyReward="1000" />
+    <collectible name="horseLime"           group="horse"           dialogText="$l10n_collectible_us_horse"             moneyReward="1000" />
+
+    <collectible name="tractorGreen"        group="tractor"         dialogText="$l10n_collectible_us_tractor"          moneyReward="1000" />
+    <collectible name="plowGreen"           group="plow"            dialogText="$l10n_collectible_us_plow"             moneyReward="1000" />
+    <collectible name="seederGreen"         group="seeder"          dialogText="$l10n_collectible_us_seeder"           moneyReward="1000" />
+    <collectible name="waterTrailerGreen"   group="waterTrailer"    dialogText="$l10n_collectible_us_waterTrailer"     moneyReward="1000" />
+    <collectible name="harvesterGreen"      group="harvester"       dialogText="$l10n_collectible_us_harvester"        moneyReward="1000" />
+    <collectible name="trailerGreen"        group="trailer"         dialogText="$l10n_collectible_us_trailer"          moneyReward="1000" />
+    <collectible name="pigGreen"            group="pig"             dialogText="$l10n_collectible_us_pig"              moneyReward="1000" />
+    <collectible name="cowGreen"            group="cow"             dialogText="$l10n_collectible_us_cow"              moneyReward="1000" />
+    <collectible name="sheepGreen"          group="sheep"           dialogText="$l10n_collectible_us_sheep"            moneyReward="1000" />
+    <collectible name="horseGreen"          group="horse"           dialogText="$l10n_collectible_us_horse"            moneyReward="1000" />
+
+    <collectible name="tractorCyan"         group="tractor"         dialogText="$l10n_collectible_us_tractor"           moneyReward="1000" />
+    <collectible name="plowCyan"            group="plow"            dialogText="$l10n_collectible_us_plow"              moneyReward="1000" />
+    <collectible name="seederCyan"          group="seeder"          dialogText="$l10n_collectible_us_seeder"            moneyReward="1000" />
+    <collectible name="waterTrailerCyan"    group="waterTrailer"    dialogText="$l10n_collectible_us_waterTrailer"      moneyReward="1000" />
+    <collectible name="harvesterCyan"       group="harvester"       dialogText="$l10n_collectible_us_harvester"         moneyReward="1000" />
+    <collectible name="trailerCyan"         group="trailer"         dialogText="$l10n_collectible_us_trailer"           moneyReward="1000" />
+    <collectible name="pigCyan"             group="pig"             dialogText="$l10n_collectible_us_pig"               moneyReward="1000" />
+    <collectible name="cowCyan"             group="cow"             dialogText="$l10n_collectible_us_cow"               moneyReward="1000" />
+    <collectible name="sheepCyan"           group="sheep"           dialogText="$l10n_collectible_us_sheep"             moneyReward="1000" />
+    <collectible name="horseCyan"           group="horse"           dialogText="$l10n_collectible_us_horse"             moneyReward="1000" />
+
+    <collectible name="tractorAzure"        group="tractor"         dialogText="$l10n_collectible_us_tractor"          moneyReward="1000" />
+    <collectible name="plowAzure"           group="plow"            dialogText="$l10n_collectible_us_plow"             moneyReward="1000" />
+    <collectible name="seederAzure"         group="seeder"          dialogText="$l10n_collectible_us_seeder"           moneyReward="1000" />
+    <collectible name="waterTrailerAzure"   group="waterTrailer"    dialogText="$l10n_collectible_us_waterTrailer"     moneyReward="1000" />
+    <collectible name="harvesterAzure"      group="harvester"       dialogText="$l10n_collectible_us_harvester"        moneyReward="1000" />
+    <collectible name="trailerAzure"        group="trailer"         dialogText="$l10n_collectible_us_trailer"          moneyReward="1000" />
+    <collectible name="pigAzure"            group="pig"             dialogText="$l10n_collectible_us_pig"              moneyReward="1000" />
+    <collectible name="cowAzure"            group="cow"             dialogText="$l10n_collectible_us_cow"              moneyReward="1000" />
+    <collectible name="sheepAzure"          group="sheep"           dialogText="$l10n_collectible_us_sheep"            moneyReward="1000" />
+    <collectible name="horseAzure"          group="horse"           dialogText="$l10n_collectible_us_horse"            moneyReward="1000" />
+
+    <collectible name="tractorBlue"         group="tractor"         dialogText="$l10n_collectible_us_tractor"           moneyReward="1000" />
+    <collectible name="plowBlue"            group="plow"            dialogText="$l10n_collectible_us_plow"              moneyReward="1000" />
+    <collectible name="seederBlue"          group="seeder"          dialogText="$l10n_collectible_us_seeder"            moneyReward="1000" />
+    <collectible name="waterTrailerBlue"    group="waterTrailer"    dialogText="$l10n_collectible_us_waterTrailer"      moneyReward="1000" />
+    <collectible name="harvesterBlue"       group="harvester"       dialogText="$l10n_collectible_us_harvester"         moneyReward="1000" />
+    <collectible name="trailerBlue"         group="trailer"         dialogText="$l10n_collectible_us_trailer"           moneyReward="1000" />
+    <collectible name="pigBlue"             group="pig"             dialogText="$l10n_collectible_us_pig"               moneyReward="1000" />
+    <collectible name="cowBlue"             group="cow"             dialogText="$l10n_collectible_us_cow"               moneyReward="1000" />
+    <collectible name="sheepBlue"           group="sheep"           dialogText="$l10n_collectible_us_sheep"             moneyReward="1000" />
+    <collectible name="horseBlue"           group="horse"           dialogText="$l10n_collectible_us_horse"             moneyReward="1000" />
+
+    <collectible name="tractorViolet"       group="tractor"         dialogText="$l10n_collectible_us_tractor"         moneyReward="1000" />
+    <collectible name="plowViolet"          group="plow"            dialogText="$l10n_collectible_us_plow"            moneyReward="1000" />
+    <collectible name="seederViolet"        group="seeder"          dialogText="$l10n_collectible_us_seeder"          moneyReward="1000" />
+    <collectible name="waterTrailerViolet"  group="waterTrailer"    dialogText="$l10n_collectible_us_waterTrailer"    moneyReward="1000" />
+    <collectible name="harvesterViolet"     group="harvester"       dialogText="$l10n_collectible_us_harvester"       moneyReward="1000" />
+    <collectible name="trailerViolet"       group="trailer"         dialogText="$l10n_collectible_us_trailer"         moneyReward="1000" />
+    <collectible name="pigViolet"           group="pig"             dialogText="$l10n_collectible_us_pig"             moneyReward="1000" />
+    <collectible name="cowViolet"           group="cow"             dialogText="$l10n_collectible_us_cow"             moneyReward="1000" />
+    <collectible name="sheepViolet"         group="sheep"           dialogText="$l10n_collectible_us_sheep"           moneyReward="1000" />
+    <collectible name="horseViolet"         group="horse"           dialogText="$l10n_collectible_us_horse"           moneyReward="1000" />
+
+    <collectible name="tractorMagenta"      group="tractor"         dialogText="$l10n_collectible_us_tractor"        moneyReward="1000" />
+    <collectible name="plowMagenta"         group="plow"            dialogText="$l10n_collectible_us_plow"           moneyReward="1000" />
+    <collectible name="seederMagenta"       group="seeder"          dialogText="$l10n_collectible_us_seeder"         moneyReward="1000" />
+    <collectible name="waterTrailerMagenta" group="waterTrailer"    dialogText="$l10n_collectible_us_waterTrailer"   moneyReward="1000" />
+    <collectible name="harvesterMagenta"    group="harvester"       dialogText="$l10n_collectible_us_harvester"      moneyReward="1000" />
+    <collectible name="trailerMagenta"      group="trailer"         dialogText="$l10n_collectible_us_trailer"        moneyReward="1000" />
+    <collectible name="pigMagenta"          group="pig"             dialogText="$l10n_collectible_us_pig"            moneyReward="1000" />
+    <collectible name="cowMagenta"          group="cow"             dialogText="$l10n_collectible_us_cow"            moneyReward="1000" />
+    <collectible name="sheepMagenta"        group="sheep"           dialogText="$l10n_collectible_us_sheep"          moneyReward="1000" />
+    <collectible name="horseMagenta"        group="horse"           dialogText="$l10n_collectible_us_horse"          moneyReward="1000" />
+
+    <target incompleteNode="2" completeNode="1" />
+
+</collectibles>
