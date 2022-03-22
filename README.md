@@ -6,23 +6,41 @@ An easy to use template for making HD mod maps in Farming Simulator 22
 - All ground textures (200+ textures and 50+ combined layers) from all 3 FS22 stock maps are made available in this map (No more limitations)
 - All textures are placed on the map at 2x resolution.
 - Drawing "perfect" diagonal lines is now possible: No more "terrain stepping"
+- All ground textures are placable from the shop menu!
+- The whole map is owned by the player in "new farmer mode".
 
-# How to use:
+# How to use (Import to GIANTS EDITOR):
 
-1. Make a new mod map in giants editor
-2. Save
-3. Close Giants Editor
-4. Copy the files from this template into your mod folder. Click on replace
-5. Open the new mod file in Giants Editor
-6. Save
-7. Enjoy modding your own HD 4K map
+1. Extract the zip file (from the releases page) to a working directory
+2. Open with GIANTS EDITOR
+3. Enjoy modding your own HD 4K map
+
+# How to use (Export to FS22 GAME):
+
+1. BACKUP your mapUS folder to a safe location. <<DO NOT SKIP THIS STEP>>. The folder is \SteamLibrary\steamapps\common\Farming Simulator 22\data\maps\mapUS
+2. Extract the zip file (from the releases page) to a working directory
+3. Copy all files to \SteamLibrary\steamapps\common\Farming Simulator 22\data\maps\mapUS
+4. Load the game and load Elmcreek in New Player mode.
+   <<IMPORTANT: While the game will load and is somewhat playable, this is currently for testing only!>>
+  
+#Recommended Mods
+- Power Tools (from the in game ModHub)
+  
+# To do (future versions)
+- make all placeables, terrain edits and terraforming free 
+- add all the 3D assets from all 3 base maps as placeables from the shop menu.
+- create a shop menu better suited for map creation
+- create script or tool to export world save as a mod map???
+- create script for different game modes???
+- include store dependancies for good asset packs???
+
+
 
 # Known issues
 - The editor is laggy when in paint mode. This is an issue with the editor with 8192x8192 weight files. Don't worry. This doesn't happen in game
 - The loading screen in game takes a liitle longer. This only happens the first time you run it.
 - The first 20 seconds of game play (after the loading screen) may stutter. Give everything time to load in and this issue goes away.
 
-# To do
-- Finish adding all combined layers to the map.xml so they can all be used from the build menu in game. (currently in progress.)
+
 
 # If you like this, you are free to change and use it. But please give me credit in your source code.
