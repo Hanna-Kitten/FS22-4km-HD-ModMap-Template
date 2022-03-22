@@ -21,10 +21,10 @@ An easy to use template for making HD mod maps in Farming Simulator 22
 5. Load the game and load Elmcreek in New Player mode.
    <<IMPORTANT: While the game will load and is somewhat playable, this is currently for testing only!>>
   
-#Recommended Mods
+# Recommended Mods
 - Power Tools (from the in game ModHub)
    
-#Download Link
+# Download Link
    
 https://github.com/Katten-Hanna/FS22-4km-HD-ModMap-Template/releases
   
