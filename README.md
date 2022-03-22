@@ -34,6 +34,7 @@ https://github.com/Katten-Hanna/FS22-4km-HD-ModMap-Template/releases
 - make all placeables, terrain edits and terraforming free 
 - add all the 3D assets from all 3 base maps as placeables from the shop menu.
 - create a shop menu better suited for map creation
+- create a toggleable grid on the ground to show tile widths???
 - create script or tool to export world save as a mod map???
 - create script for different game modes???
 - include store dependancies for good asset packs???
