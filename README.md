@@ -12,7 +12,7 @@ An easy to use template for making HD mod maps in Farming Simulator 22
 # How to use (Import to GIANTS EDITOR):
 
 1. Extract the zip file (from the releases page) to a working directory
-2. Open with GIANTS EDITOR
+2. Open map.i3d with GIANTS EDITOR
 3. Enjoy modding your own HD 4K map
 
 # How to use (Export to FS22 GAME):
@@ -20,13 +20,15 @@ An easy to use template for making HD mod maps in Farming Simulator 22
 1. BACKUP your mapUS folder to a safe location. <<DO NOT SKIP THIS STEP>>. The folder is \SteamLibrary\steamapps\common\Farming Simulator 22\data\maps\mapUS
 2. Extract the zip file (from the releases page) to a working directory
 3. Copy all files to \SteamLibrary\steamapps\common\Farming Simulator 22\data\maps\mapUS
-4. Load the game and load Elmcreek in New Player mode.
+4. Replace all files
+5. Load the game and load Elmcreek in New Player mode.
    <<IMPORTANT: While the game will load and is somewhat playable, this is currently for testing only!>>
   
 #Recommended Mods
 - Power Tools (from the in game ModHub)
   
 # To do (future versions)
+- package the files as a mod so that replacing the mapUS is no longer needed.
 - make all placeables, terrain edits and terraforming free 
 - add all the 3D assets from all 3 base maps as placeables from the shop menu.
 - create a shop menu better suited for map creation
