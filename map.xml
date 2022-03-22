@@ -94,39 +94,114 @@
     <!-- paintable ground types - need to be defined in map.i3d node TerrainTransformGroup|CombinedLayer -->
     <groundTypeMappings>
     <!-- Base -->
-        <groundTypeMapping type="USdirt"           title="DIRT (US)" layer="US_DIRT" />
+        
 
-        <groundTypeMapping type="FRdirt"           title="DIRT (FR)" layer="FR_DIRT" />
 
-        <groundTypeMapping type="ALPdirt"           title="ROUGH DIRT (ALP)" layer="ALP_ROUGHDIRT" />
     <!-- Standard -->
         <groundTypeMapping type="USasphalt"        title="CONCRETE (US)" layer="US_CONCRETE" />  <!-- fallback to layer concrete for placeables using "asphalt" -->
-        <groundTypeMapping type="USgravel"         title="GRAVEL (US)" layer="US_GRAVEL" />
-        <groundTypeMapping type="USgrass"          title="GRASS (US)" layer="US_GRASS" />
-        <groundTypeMapping type="USgrassDry"       title="DRY GRASS (US)" layer="US_GRASSDRY" />
-        <groundTypeMapping type="USanimalMud"      title="ANIMAL MUD (US)" layer="US_ANIMALMUD" />
-        <groundTypeMapping type="USconcrete"       title="CONCRETE (US)" layer="US_CONCRETE" />
+        
+   
+  
+        <groundTypeMapping type="01_USdirt"           title="DIRT (US)" layer="US_DIRT" />
+        <groundTypeMapping type="02_FRdirt"           title="DIRT (FR)" layer="FR_DIRT" />
+        <groundTypeMapping type="03_ALPdirt"           title="ROUGH DIRT (ALP)" layer="ALP_ROUGHDIRT" />
 
-        <groundTypeMapping type="FRasphalt"        title="ASPHALT (FR)" layer="FR_ASPHALT" />
-        <groundTypeMapping type="FRgravel"         title="GRAVEL (FR)" layer="FR_GRAVEL" />
-        <groundTypeMapping type="FRgrass"          title="GRASS (FR)" layer="FR_GRASS" />
-        <groundTypeMapping type="FRanimalMud"      title="ANIMAL MUD (FR)" layer="FR_ANIMALMUD" />
-        <groundTypeMapping type="FRconcrete"       title="CONCRETE (FR)" layer="FR_CONCRETE" />
+        <groundTypeMapping type="04_FRdirtDark"           title="DARK DIRT (FR)" layer="FR_DIRTDARK" />
 
-        <groundTypeMapping type="ALPasphalt"        title="ASPHALT (ALP)" layer="ALP_ASPHALT" />
-        <groundTypeMapping type="ALPgravel"         title="GRAVEL (ALP)" layer="ALP_GRAVEL" />
-        <groundTypeMapping type="ALPgrass"          title="GRASS (ALP)" layer="ALP_GRASS" />
-        <groundTypeMapping type="ALPanimalMud"      title="ANIMAL MUD (ALP)" layer="ALP_ANIMALMUD" />
-        <groundTypeMapping type="ALPconcrete"       title="CONCRETE (ALP)" layer="ALP_CONCRETE" />
+        <groundTypeMapping type="05_FRgrassDry"      title="GRASS DIRT (FR)" layer="FR_GRASSDIRT" />
+
+        <groundTypeMapping type="06_USgrass"          title="GRASS (US)" layer="US_GRASS" />
+        <groundTypeMapping type="07_FRgrass"          title="GRASS (FR)" layer="FR_GRASS" />
+        <groundTypeMapping type="08_ALPgrass"          title="GRASS (ALP)" layer="ALP_GRASS" />
+
+        <groundTypeMapping type="09_USgrassDry"       title="DRY GRASS (US)" layer="US_GRASSDRY" />
+	  <groundTypeMapping type="10_USgrassDryPatchy"       title="DRY GRASS PATCHY (US)" layer="US_GRASSDRYPATCHY" />
+
+        <groundTypeMapping type="11_USgravelGrass"         title="GRAVEL GRASS (US)" layer="US_GRAVELGRASS" />
+        <groundTypeMapping type="12_USgravelMoss"         title="GRAVEL MOSS (US)" layer="US_GRAVELMOSS" /> 
+
+        <groundTypeMapping type="13_USgravel"         title="GRAVEL (US)" layer="US_GRAVEL" />
+	  <groundTypeMapping type="14_USgravelDirt"         title="GRAVEL DIRT (US)" layer="US_GRAVELDIRT" />
+        <groundTypeMapping type="15_USgravelDust"         title="GRAVEL DUST (US)" layer="US_GRAVELDUST" />
+        <groundTypeMapping type="16_USpathwayGravel"         title="GRAVEL PATHWAY (US)" layer="US_PATHWAYGRAVEL" />
+        <groundTypeMapping type="17_USpathway"         title="GRAVEL PATHWAY(US)" layer="US_PATHWAY" />
+
+        <groundTypeMapping type="18_ALPgravel"         title="GRAVEL (ALP)" layer="ALP_GRAVEL" />
+        <groundTypeMapping type="19_FRgravel"         title="GRAVEL (FR)" layer="FR_GRAVEL" />
+
+        <groundTypeMapping type="20_USconcrete"       title="CONCRETE (US)" layer="US_CONCRETE" />
+
+        <groundTypeMapping type="21_FRconcrete"       title="CONCRETE (FR)" layer="FR_CONCRETE" />
+        <groundTypeMapping type="22_FRconcreteTiles"           title="CONCRETE TILES (FR)" layer="FR_CONCRETETILES" />
+        <groundTypeMapping type="23_FRconcreteRubble"       title="CONCRETE RUBBLE (FR)" layer="FR_CONCRETERUBBLE" />
+
+        <groundTypeMapping type="24_ALPconcrete"       title="CONCRETE (ALP)" layer="ALP_CONCRETE" />
+        <groundTypeMapping type="25_ALPconcreteDirt"           title="CONCRETE DIRT (ALP)" layer="ALP_CONCRETEDIRT" />
+        <groundTypeMapping type="26_ALPconcreteWater"           title="WET CONCRETE (ALP)" layer="ALP_CONCRETEWATER" />
+
+
+        <groundTypeMapping type="27_FRasphalt"        title="ASPHALT (FR)" layer="FR_ASPHALT" />
+
+
+        <groundTypeMapping type="28_ALPasphalt"        title="ASPHALT (ALP)" layer="ALP_ASPHALT" />
+
+
+
+        <groundTypeMapping type="29_FRcobblestone"           title="COBBLESTONE (FR)" layer="FR_COBBLESTONE" />
+        <groundTypeMapping type="30_FRgroundBricks"           title="BRICK TILES (FR)" layer="FR_GROUNDBRICKS" />
+        <groundTypeMapping type="31_ALPplate"           title="PLATE (ALP)" layer="ALP_PLATE" />
+        <groundTypeMapping type="32_ALPconcreteTiles"           title="CONCRETE TILES (ALP)" layer="ALP_CONCRETETILES" />
+
+
+        <groundTypeMapping type="33_FRrock"           title="MOUNTAIN ROCK (FR)" layer="FR_MOUNTAINROCK" />
+        <groundTypeMapping type="34_FRrockGranite"   title="MOUNTAIN ROCK DARK (FR)" layer="FR_MOUNTROCKDARK" />
+        <groundTypeMapping type="35_ALProck"           title="MOUNTAIN ROCK (ALP)" layer="ALP_MOUNTAINROCK" />
+
+
+        <groundTypeMapping type="36_USforestGround"   title="FOREST GROUND (US)" layer="US_FORESTGROUND" />
+        <groundTypeMapping type="37_FRforestGround"   title="FOREST GROUND (FR)" layer="FR_FORESTGROUND" />
+        <groundTypeMapping type="38_FRforestLeaves"   title="FOREST LEAVES (FR)" layer="FR_FORESTLEAVES" />
+        <groundTypeMapping type="39_ALPforestGround"   title="FOREST GROUND (ALP)" layer="ALP_FORESTNEEDLES" />
+
+        <groundTypeMapping type="40_USriverbed"       title="RIVER BED (US)" layer="US_RIVERBED" />
+        <groundTypeMapping type="41_USwetmud"       title="WET MUD (US)" layer="US_WETMUD" />
+        <groundTypeMapping type="42_FRrivermud"           title="RIVER MUD (FR)" layer="FR_RIVERMUD" />
+        <groundTypeMapping type="43_FRwaterPuddle"           title="WATER PUDDLE (FR)" layer="FR_WATERPUDDLE" />
+        <groundTypeMapping type="44_ALPriverBank"           title="RIVER BANK (ALP)" layer="ALP_RIVERBANK" />
+        <groundTypeMapping type="45_ALPriverBankEdge"           title="RIVER BANK EDGE (ALP)" layer="ALP_RIVERBANKEDGE" />
+        <groundTypeMapping type="46_ALPriverWater"           title="RIVER WATER (ALP)" layer="ALP_RIVERWATER" />
+        <groundTypeMapping type="47_ALPwaterPuddle"           title="WATER PUDDLE (ALP)" layer="ALP_WATERPUDDLE" />
+
+        <groundTypeMapping type="48_ALPbeachSandWet"           title="WET SAND (ALP)" layer="ALP_BEACHSANDWET" />
+
+
+        <groundTypeMapping type="49_USanimalMud"      title="ANIMAL MUD (US)" layer="US_ANIMALMUD" />
+        <groundTypeMapping type="50_FRanimalMud"      title="ANIMAL MUD (FR)" layer="FR_ANIMALMUD" />
+        <groundTypeMapping type="51_ALPanimalMud"      title="ANIMAL MUD (ALP)" layer="ALP_ANIMALMUD" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <!-- Special -->
-        <groundTypeMapping type="USforestGround"   title="FOREST GROUND (US)" layer="US_FORESTGROUND" />
+        
 
-        <groundTypeMapping type="FRforestGround"   title="FOREST GROUND (FR)" layer="FR_FORESTGROUND" />
-        <groundTypeMapping type="FRgrassDry"      title="GRASS DIRT (FR)" layer="FR_GRASSDIRT" />
-        <groundTypeMapping type="FRrock"           title="MOUNTAIN ROCK (FR)" layer="FR_MOUNTAINROCK" />
-        <groundTypeMapping type="FRrockGranite"   title="MOUNTAIN ROCK DARK (FR)" layer="FR_MOUNTROCKDARK" />
 
-        <groundTypeMapping type="ALPforestGround"   title="FOREST GROUND (ALP)" layer="ALP_FORESTNEEDLES" />
-        <groundTypeMapping type="ALProck"           title="MOUNTAIN ROCK (ALP)" layer="ALP_MOUNTAINROCK" />
+
+
     </groundTypeMappings>
 </map>
