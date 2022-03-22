@@ -1,5 +1,6 @@
 # FS22-4km-HD-ModMap-Template
 An easy to use template for making HD mod maps in Farming Simulator 22
+![image](https://user-images.githubusercontent.com/57491165/159485626-c4256557-1e9b-4768-b31a-906b8001b9f7.png)
 
 # Features
 - All ground textures (200+ textures and 50+ combined layers) from all 3 FS22 stock maps are made available in this map (No more limitations)
