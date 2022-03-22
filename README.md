@@ -2,7 +2,6 @@
 An easy to use template for making HD mod maps in Farming Simulator 22
 
 # Features
-
 - All ground textures (200+ textures and 50+ combined layers) from all 3 FS22 stock maps are made available in this map (No more limitations)
 - All textures are placed on the map at 2x resolution.
 - Drawing "perfect" diagonal lines is now possible: No more "terrain stepping"
@@ -10,13 +9,11 @@ An easy to use template for making HD mod maps in Farming Simulator 22
 - The whole map is owned by the player in "new farmer mode".
 
 # How to use (Import to GIANTS EDITOR):
-
 1. Extract the zip file (from the releases page) to a working directory
 2. Open map.i3d with GIANTS EDITOR
 3. Enjoy modding your own HD 4K map
 
 # How to use (Export to FS22 GAME):
-
 1. BACKUP your mapUS folder to a safe location. <<DO NOT SKIP THIS STEP>>. The folder is \SteamLibrary\steamapps\common\Farming Simulator 22\data\maps\mapUS
 2. Extract the zip file (from the releases page) to a working directory
 3. Copy all files to \SteamLibrary\steamapps\common\Farming Simulator 22\data\maps\mapUS
@@ -26,6 +23,9 @@ An easy to use template for making HD mod maps in Farming Simulator 22
   
 #Recommended Mods
 - Power Tools (from the in game ModHub)
+   
+#Download Link
+https://github.com/Katten-Hanna/FS22-4km-HD-ModMap-Template/releases
   
 # To do (future versions)
 - package the files as a mod so that replacing the mapUS is no longer needed.
