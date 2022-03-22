@@ -38,6 +38,7 @@ https://github.com/Katten-Hanna/FS22-4km-HD-ModMap-Template/releases
 - create script or tool to export world save as a mod map???
 - create script for different game modes???
 - include store dependancies for good asset packs???
+- implement in-game infoLayer editing UI, for editing farmlands and AI collisions???
 
 
 
