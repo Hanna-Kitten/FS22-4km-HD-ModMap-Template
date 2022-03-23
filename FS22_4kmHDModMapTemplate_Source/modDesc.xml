@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<modDesc descVersion="63">
+    <author>Katten Hanna</author>
+    <version>1.0.0.0</version>
+
+    <title>
+        <en>Map Creation Template</en>
+    </title>
+
+    <description>
+        <en><![CDATA[
+			Make your own maps!
+			]]>
+	   </en>
+    </description>
+
+    <iconFilename>icon.png</iconFilename>
+    <multiplayer supported="true"/>
+
+    
+	<storeItems>
+    	</storeItems>
+	
+	<l10n>   
+   	</l10n>
+	
+	
+	
+	
+	<maps>
+        <map id="Template.SampleModMap" className="Mission00" filename="$dataS/scripts/missions/mission00.lua" configFilename="maps/map.xml" defaultVehiclesXMLFilename="maps/vehicles.xml" defaultPlaceablesXMLFilename="maps/placeables.xml" defaultItemsXMLFilename="maps/items.xml">
+            <title>
+                <en>Map Creation Template</en>
+            </title>
+            <description>
+                <en>Make your own maps!</en>
+            </description>
+            <iconFilename>preview.png</iconFilename>
+        </map>
+    </maps>
+	
+	
+
+</modDesc>
