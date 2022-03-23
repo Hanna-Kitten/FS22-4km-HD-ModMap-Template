@@ -10,8 +10,8 @@ An easy to use template for making HD mod maps in Farming Simulator 22
 - The whole map is owned by the player in "new farmer mode".
 
 # How to use (Import to GIANTS EDITOR):
-1. Extract the .zip source file (from the releases page) to a working directory
-2. Open map.i3d with GIANTS EDITOR
+1. Extract .zip source file (from the releases page) to a working directory
+2. Open \FS22_4kmHDModMapTemplate_Source\maps\map.i3d with GIANTS EDITOR
 3. Enjoy modding your own HD 4K map
 
 # How to use (Export to FS22 GAME):
