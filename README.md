@@ -27,7 +27,6 @@ An easy to use template for making HD mod maps in Farming Simulator 22
 https://github.com/Katten-Hanna/FS22-4km-HD-ModMap-Template/releases
   
 # To do (future versions)
-- package the files as a mod so that replacing the mapUS is no longer needed.
 - make all placeables, terrain edits and terraforming free 
 - add all the 3D assets from all 3 base maps as placeables from the shop menu.
 - create a shop menu better suited for map creation
