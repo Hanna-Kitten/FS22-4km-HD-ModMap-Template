@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<fieldGround>
+    <densityMaps>
+        <sprayLevel filename="$data/maps/mapUS/data/infoLayer/infoLayer_sprayLevel.png" firstChannel="0" numChannels="2" maxValue="2"/>
+        <limeLevel filename="$data/maps/mapUS/data/infoLayer/infoLayer_limeLevel.png" firstChannel="0" numChannels="2" />
+        <plowLevel filename="$data/maps/mapUS/data/infoLayer/infoLayer_plowLevel.png" firstChannel="0" numChannels="1" />
+        <stubbleShredLevel filename="$data/maps/mapUS/data/infoLayer/infoLayer_stubbleShredLevel.png" firstChannel="0" numChannels="1" />
+        <rollerLevel filename="$data/maps/mapUS/data/infoLayer/infoLayer_rollerLevel.png" firstChannel="0" numChannels="1" />
+    </densityMaps>
+</fieldGround>
