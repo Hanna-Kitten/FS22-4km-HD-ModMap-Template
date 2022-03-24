@@ -1,5 +1,7 @@
 # FS22-4km-HD-ModMap-Template
 An easy to use template for making HD mod maps in Farming Simulator 22
+
+
 ![image](https://user-images.githubusercontent.com/57491165/159485626-c4256557-1e9b-4768-b31a-906b8001b9f7.png)
 
 # Features
@@ -15,12 +17,10 @@ An easy to use template for making HD mod maps in Farming Simulator 22
 3. Enjoy modding your own HD 4K map
 
 # How to use (Export to FS22 GAME):
-1. BACKUP your mapUS folder to a safe location. <<DO NOT SKIP THIS STEP>>. The folder is \SteamLibrary\steamapps\common\Farming Simulator 22\data\maps\mapUS
-2. Extract the zip file (from the releases page) to a working directory
-3. Copy all files to \SteamLibrary\steamapps\common\Farming Simulator 22\data\maps\mapUS
-4. Replace all files
-5. Load the game and load Elmcreek in New Player mode.
-   <<IMPORTANT: While the game will load and is somewhat playable, this is currently for testing only!>>
+- Copy FS22_4kmModMapTemplate.zip to C:\Users\YOUR_USER\Documents\My Games\FarmingSimulator2022\mods
+- Run the mod in a new save in New Farmer mode. 
+- <<IMPORTANT: While the game will load and is somewhat playable, this is currently for testing only!>>
+
   
 # Recommended Mods
 - Power Tools (from the in game ModHub)
@@ -29,8 +29,7 @@ An easy to use template for making HD mod maps in Farming Simulator 22
    
 https://github.com/Katten-Hanna/FS22-4km-HD-ModMap-Template/releases
   
-# To do (future versions)
-- package the files as a mod so that replacing the mapUS is no longer needed.
+# To do (later versions)
 - make all placeables, terrain edits and terraforming free 
 - add all the 3D assets from all 3 base maps as placeables from the shop menu.
 - create a shop menu better suited for map creation
