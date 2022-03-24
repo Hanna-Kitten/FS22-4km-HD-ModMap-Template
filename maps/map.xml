@@ -1,0 +1,207 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<map width="4096" height="4096" imageFilename="maps/overview.png"  mapFieldColor="0.1500 0.1195 0.0953" mapGrassFieldColor="0.1470 0.1441 0.0823">
+    <filename>maps/map.i3d</filename>
+    <vertexBufferMemoryUsage>136077568</vertexBufferMemoryUsage>
+    <indexBufferMemoryUsage>19387392</indexBufferMemoryUsage>
+    <textureMemoryUsage>778895360</textureMemoryUsage>
+
+    <culling xzOffset="100" />
+    <densityMap revision="1" />
+    <terrainLodTexture revision="1" />
+    <splitShapes revision="2" />
+    <tipCollision revision="2" />
+    <placementCollision revision="2" />
+    <navigationCollision revision="3" />
+
+    <shop filename="$data/store/ui/shop.xml" />
+    <storeItems filename="maps/storeItems.xml" />
+
+    <guidedTour filename="maps/guidedTour.xml" />
+
+    <sounds filename="maps/sound.xml" />
+    <environment filename="maps/environment.xml" />
+    <growth filename="$data/maps/maps_growth.xml" />
+    <weed filename="maps/weed.xml" />
+    <fieldGround filename="maps/fieldGround.xml" />
+    <farmlands filename="maps/farmlands.xml" />
+
+    <animals filename="$dataS/character/animals.xml">
+        <names filename="$dataS/character/animalNames.xml" />
+        <food filename="$dataS/character/animalFood.xml" />
+    </animals>
+    <wildlife filename="$dataS/character/wildlifeSpawner.xml" />
+    <npcs filename="maps/npcs.xml" />
+    <!-- <helpers filename="$data/maps/maps_helpers.xml" /> -->
+
+    <missionVehicles filename="$dataS/missionVehicles.xml" />
+
+    <licensePlates filename="$data/maps/mapUS/licensePlates/licensePlatesUS.xml"/>
+
+    <helpline filename="$dataS/helpLine.xml">
+        <trigger position="161 85.7 146"   categoryIndex="2" pageIndex="1" /> <!-- buying fields and farming -->
+        <trigger position="214 85.3 216"   categoryIndex="3" pageIndex="1" /> <!-- improving yield -->
+        <trigger position="235.5 83.3 176" categoryIndex="8" pageIndex="2" /> <!-- build mode -->
+        <trigger position="158 88.3 99"    categoryIndex="8" pageIndex="3" /> <!-- carry objects -->
+
+        <trigger position="-585 83.3 -261" categoryIndex="6" pageIndex="1" /> <!-- animals -->
+        <trigger position="61 86.2 -6"     categoryIndex="8" pageIndex="1" /> <!-- wardrobe -->
+        <trigger position="848 86 42"      categoryIndex="1" pageIndex="2" /> <!-- shop -->
+        <trigger position="980 88.25 422"  categoryIndex="4" pageIndex="7" /> <!-- grape -->
+    </helpline>
+
+    <gameplayHints filename="$dataS/gameplayHints.xml" />
+    <collectibles filename="maps/collectibles.xml" />
+
+    <hotspots>
+        <placeableHotspot type="SHOP_ANIMAL" text="$l10n_animals_dealer" worldPosition="-581.462 -322.725" teleportWorldPosition="-581.462 82 -322.725" />
+        <placeableHotspot type="SHOP" text="$l10n_vehicle_shop" worldPosition="847.5 34.5" teleportWorldPosition="847.5 0 34.5" />
+    </hotspots>
+
+    <!-- <competitiveMultiplayer filename="$data/maps/mapUS/competitiveMultiplayer.xml" /> -->
+    <!-- <fillTypes filename="$data/maps/mapUS/maps_fillTypes.xml" /> -->
+    <!-- <sprayTypes filename="$data/maps/mapUS/maps_sprayTypes.xml" /> -->
+    <!-- <fruitTypes filename="$data/maps/mapUS/maps_fruitTypes.xml" /> -->
+    <!-- <treeTypes filename="$data/maps/mapUS/maps_treeTypes.xml" /> -->
+    <!-- <densityMapHeightTypes filename="$data/maps/mapUS/maps_densityMapHeightTypes.xml" /> -->
+
+    <motionPathEffects filename="$data/effects/motionPathEffects.xml"/>
+    <bales filename="$data/maps/maps_bales.xml"/>
+
+    <additionalFiles>
+        <additionalFile filename="$data/shared/materialHolders/tensionBeltMaterialHolder.i3d" />
+        <additionalFile filename="$data/shared/materialHolders/tireTrackMaterialHolder.i3d" />
+        <additionalFile filename="$data/shared/mapTargetMarker.i3d" />
+        <additionalFile filename="$data/fillPlanes/fillPlane_materialHolder.i3d" />
+        <additionalFile filename="$data/effects/effects.xml" />
+    </additionalFiles>
+
+    <!-- add all foliage layers that are not fruits. You need to define these foliage layers to be able to remove them with a cultivator or plow -->
+    <decoFoliages>
+        <decoFoliage layerName="decoFoliage" startChannel="0" numChannels="4" mowable="true"/>
+        <decoFoliage layerName="decoForest" startChannel="0" numChannels="4" mowable="true"/>
+        <decoFoliage layerName="decoBush" startChannel="0" numChannels="4" />
+
+        <mapping name="grassShort" layerName="decoFoliage" state="9" />
+    </decoFoliages>
+
+    <paintableFoliages>
+        <paintableFoliage layerName="grass" startChannel="0" numStateChannels="4" />
+        <paintableFoliage layerName="meadow" startChannel="0" numStateChannels="4" />
+        <paintableFoliage layerName="decoBush" startChannel="0" numStateChannels="4" />
+        <paintableFoliage layerName="decoFoliage" startChannel="0" numStateChannels="4" />
+    </paintableFoliages>
+
+    <!-- paintable ground types - need to be defined in map.i3d node TerrainTransformGroup|CombinedLayer -->
+    <groundTypeMappings>
+    <!-- Base -->
+        
+
+
+    <!-- Standard -->
+        <groundTypeMapping type="USasphalt"        title="CONCRETE (US)" layer="US_CONCRETE" />  <!-- fallback to layer concrete for placeables using "asphalt" -->
+        
+   
+  
+        <groundTypeMapping type="01_USdirt"           title="DIRT (US)" layer="US_DIRT" />
+        <groundTypeMapping type="02_FRdirt"           title="DIRT (FR)" layer="FR_DIRT" />
+        <groundTypeMapping type="03_ALPdirt"           title="ROUGH DIRT (ALP)" layer="ALP_ROUGHDIRT" />
+
+        <groundTypeMapping type="04_FRdirtDark"           title="DARK DIRT (FR)" layer="FR_DIRTDARK" />
+
+        <groundTypeMapping type="05_FRgrassDry"      title="GRASS DIRT (FR)" layer="FR_GRASSDIRT" />
+
+        <groundTypeMapping type="06_USgrass"          title="GRASS (US)" layer="US_GRASS" />
+        <groundTypeMapping type="07_FRgrass"          title="GRASS (FR)" layer="FR_GRASS" />
+        <groundTypeMapping type="08_ALPgrass"          title="GRASS (ALP)" layer="ALP_GRASS" />
+
+        <groundTypeMapping type="09_USgrassDry"       title="DRY GRASS (US)" layer="US_GRASSDRY" />
+	  <groundTypeMapping type="10_USgrassDryPatchy"       title="DRY GRASS PATCHY (US)" layer="US_GRASSDRYPATCHY" />
+
+        <groundTypeMapping type="11_USgravelGrass"         title="GRAVEL GRASS (US)" layer="US_GRAVELGRASS" />
+        <groundTypeMapping type="12_USgravelMoss"         title="GRAVEL MOSS (US)" layer="US_GRAVELMOSS" /> 
+
+        <groundTypeMapping type="13_USgravel"         title="GRAVEL (US)" layer="US_GRAVEL" />
+	  <groundTypeMapping type="14_USgravelDirt"         title="GRAVEL DIRT (US)" layer="US_GRAVELDIRT" />
+        <groundTypeMapping type="15_USgravelDust"         title="GRAVEL DUST (US)" layer="US_GRAVELDUST" />
+        <groundTypeMapping type="16_USpathwayGravel"         title="GRAVEL PATHWAY (US)" layer="US_PATHWAYGRAVEL" />
+        <groundTypeMapping type="17_USpathway"         title="GRAVEL PATHWAY(US)" layer="US_PATHWAY" />
+
+        <groundTypeMapping type="18_ALPgravel"         title="GRAVEL (ALP)" layer="ALP_GRAVEL" />
+        <groundTypeMapping type="19_FRgravel"         title="GRAVEL (FR)" layer="FR_GRAVEL" />
+
+        <groundTypeMapping type="20_USconcrete"       title="CONCRETE (US)" layer="US_CONCRETE" />
+
+        <groundTypeMapping type="21_FRconcrete"       title="CONCRETE (FR)" layer="FR_CONCRETE" />
+        <groundTypeMapping type="22_FRconcreteTiles"           title="CONCRETE TILES (FR)" layer="FR_CONCRETETILES" />
+        <groundTypeMapping type="23_FRconcreteRubble"       title="CONCRETE RUBBLE (FR)" layer="FR_CONCRETERUBBLE" />
+
+        <groundTypeMapping type="24_ALPconcrete"       title="CONCRETE (ALP)" layer="ALP_CONCRETE" />
+        <groundTypeMapping type="25_ALPconcreteDirt"           title="CONCRETE DIRT (ALP)" layer="ALP_CONCRETEDIRT" />
+        <groundTypeMapping type="26_ALPconcreteWater"           title="WET CONCRETE (ALP)" layer="ALP_CONCRETEWATER" />
+
+
+        <groundTypeMapping type="27_FRasphalt"        title="ASPHALT (FR)" layer="FR_ASPHALT" />
+
+
+        <groundTypeMapping type="28_ALPasphalt"        title="ASPHALT (ALP)" layer="ALP_ASPHALT" />
+
+
+
+        <groundTypeMapping type="29_FRcobblestone"           title="COBBLESTONE (FR)" layer="FR_COBBLESTONE" />
+        <groundTypeMapping type="30_FRgroundBricks"           title="BRICK TILES (FR)" layer="FR_GROUNDBRICKS" />
+        <groundTypeMapping type="31_ALPplate"           title="PLATE (ALP)" layer="ALP_PLATE" />
+        <groundTypeMapping type="32_ALPconcreteTiles"           title="CONCRETE TILES (ALP)" layer="ALP_CONCRETETILES" />
+
+
+        <groundTypeMapping type="33_FRrock"           title="MOUNTAIN ROCK (FR)" layer="FR_MOUNTAINROCK" />
+        <groundTypeMapping type="34_FRrockGranite"   title="MOUNTAIN ROCK DARK (FR)" layer="FR_MOUNTROCKDARK" />
+        <groundTypeMapping type="35_ALProck"           title="MOUNTAIN ROCK (ALP)" layer="ALP_MOUNTAINROCK" />
+
+
+        <groundTypeMapping type="36_USforestGround"   title="FOREST GROUND (US)" layer="US_FORESTGROUND" />
+        <groundTypeMapping type="37_FRforestGround"   title="FOREST GROUND (FR)" layer="FR_FORESTGROUND" />
+        <groundTypeMapping type="38_FRforestLeaves"   title="FOREST LEAVES (FR)" layer="FR_FORESTLEAVES" />
+        <groundTypeMapping type="39_ALPforestGround"   title="FOREST GROUND (ALP)" layer="ALP_FORESTNEEDLES" />
+
+        <groundTypeMapping type="40_USriverbed"       title="RIVER BED (US)" layer="US_RIVERBED" />
+        <groundTypeMapping type="41_USwetmud"       title="WET MUD (US)" layer="US_WETMUD" />
+        <groundTypeMapping type="42_FRrivermud"           title="RIVER MUD (FR)" layer="FR_RIVERMUD" />
+        <groundTypeMapping type="43_FRwaterPuddle"           title="WATER PUDDLE (FR)" layer="FR_WATERPUDDLE" />
+        <groundTypeMapping type="44_ALPriverBank"           title="RIVER BANK (ALP)" layer="ALP_RIVERBANK" />
+        <groundTypeMapping type="45_ALPriverBankEdge"           title="RIVER BANK EDGE (ALP)" layer="ALP_RIVERBANKEDGE" />
+        <groundTypeMapping type="46_ALPriverWater"           title="RIVER WATER (ALP)" layer="ALP_RIVERWATER" />
+        <groundTypeMapping type="47_ALPwaterPuddle"           title="WATER PUDDLE (ALP)" layer="ALP_WATERPUDDLE" />
+
+        <groundTypeMapping type="48_ALPbeachSandWet"           title="WET SAND (ALP)" layer="ALP_BEACHSANDWET" />
+
+
+        <groundTypeMapping type="49_USanimalMud"      title="ANIMAL MUD (US)" layer="US_ANIMALMUD" />
+        <groundTypeMapping type="50_FRanimalMud"      title="ANIMAL MUD (FR)" layer="FR_ANIMALMUD" />
+        <groundTypeMapping type="51_ALPanimalMud"      title="ANIMAL MUD (ALP)" layer="ALP_ANIMALMUD" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Special -->
+        
+
+
+
+
+    </groundTypeMappings>
+</map>

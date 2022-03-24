@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<guidedTour>
+    <icon filename="$data/objects/tourIcon/icon.i3d" />
+
+<!-- Moving around -->
+    <step>
+        <dialog text="$l10n_tour_text_part01_lookAndWalk">
+            <input name="TOGGLE_MAP_SIZE" text="$l10n_action_toggleMapView" />
+
+            <input name="AXIS_MOVE_FORWARD_PLAYER" name2="AXIS_MOVE_SIDE_PLAYER" text="$l10n_action_movePlayer" gamepadOnly="true" />
+            <input name="AXIS_LOOK_UPDOWN_PLAYER" name2="AXIS_LOOK_LEFTRIGHT_PLAYER" text="$l10n_action_lookPlayer" gamepadOnly="true" />
+
+            <input name="AXIS_MOVE_FORWARD_PLAYER" name2="AXIS_MOVE_SIDE_PLAYER" text="$l10n_action_movePlayer" keyboardOnly="true" />
+        </dialog>
+    </step>
+
+<!-- Harvesting -->
+    <!-- Icon next to the harvester -->
+    <step>
+        <!-- If there is an activation step, this step waits until it is triggered -->
+        <activation>
+               <icon position="168 119" />
+        </activation>
+
+        <!-- Once triggered it executes the steps below -->
+
+        <mapHotspot vehicle="tourCombine" targetIndicator="false" />
+
+        <dialog text="$l10n_tour_text_part01_enterCombine">
+            <input name="ENTER" text="$l10n_input_ENTER" />
+        </dialog>
+
+        <!-- The step finishes after any dialogs are closed. If there is a goal,
+        this goal also needs to pass all its checks before the step finishes -->
+
+        <goal>
+            <check name="vehicleIsControlled" vehicle="tourCombine" />
+        </goal>
+
+        <!-- So a step with just a dialog and no activation or goal will immedietly show
+        the dialog and then continue to the next step -->
+    </step>
+
+    <step>
+        <dialog text="$l10n_tour_text_part01_attachHeader">
+            <input name="ATTACH" text="$l10n_input_ATTACH" />
+        </dialog>
+
+        <goal>
+            <check name="combineHasCutterAttached" vehicle="tourCombine" />
+        </goal>
+    </step>
+
+    <step>
+        <dialog text="$l10n_tour_text_part01_turnOnCombine">
+            <input name="SWITCH_IMPLEMENT" text="$l10n_action_switchImplement" />
+            <input name="IMPLEMENT_EXTRA2" text="$l10n_action_unfold" />
+            <input name="IMPLEMENT_EXTRA" text="$l10n_action_turnOn" />
+        </dialog>
+
+        <goal>
+            <check name="vehicleIsTurnedOn" vehicle="tourCombine" />
+        </goal>
+    </step>
+
+    <step>
+        <dialog text="$l10n_tour_text_part01_startHarvesting">
+            <input name="AXIS_ACCELERATE_VEHICLE" name2="AXIS_BRAKE_VEHICLE" text="$l10n_action_accelerate" />
+            <input name="AXIS_MOVE_SIDE_VEHICLE" text="$l10n_action_steer" />
+        </dialog>
+    </step>
+
+
+    <!-- further down the field -->
+    <step>
+        <activation>
+            <icon position="212 110" targetIndicator="true" />
+        </activation>
+
+        <dialog text="$l10n_tour_text_part01_startHelperHarvesting">
+            <input name="TOGGLE_AI" text="$l10n_input_TOGGLE_AI" />
+        </dialog>
+
+        <goal>
+            <check name="vehicleIsTurnedOn" vehicle="tourCombine" />
+            <check name="vehicleIsAIActive" vehicle="tourCombine" />
+        </goal>
+    </step>
+
+    <step>
+        <dialog text="$l10n_tour_text_part01_finished">
+            <input name="ENTER" text="$l10n_action_exitVehicle" />
+        </dialog>
+
+        <goal>
+            <check name="playerIsWalking" />
+        </goal>
+    </step>
+
+<!-- Cultivating -->
+    <!-- Icon next to the cultivating tractor -->
+    <step>
+        <activation>
+            <icon position="156 182" targetIndicator="true" />
+        </activation>
+
+        <dialog text="$l10n_tour_text_part02_enterTractor01">
+            <input name="ENTER" text="$l10n_input_ENTER" />
+            <input name="ATTACH" text="$l10n_input_ATTACH" />
+        </dialog>
+
+        <goal>
+            <check name="vehicleIsControlled" vehicle="tourTractor1" />
+            <check name="vehicleAttachedTo" vehicle="tourCultivator" toVehicle="tourTractor1" />
+            <check name="vehicleAttachedTo" vehicle="tourWeight1" toVehicle="tourTractor1" />
+        </goal>
+    </step>
+
+    <step>
+        <dialog text="$l10n_tour_text_part02_startCultivating">
+            <input name="SWITCH_IMPLEMENT" text="$l10n_action_switchImplement" />            
+            <input name="LOWER_IMPLEMENT" text="$l10n_input_LOWER_IMPLEMENT" />
+        </dialog>
+    </step>
+
+    <!-- Further down the field -->
+    <step>
+        <activation>
+            <icon position="188 187" targetIndicator="true" />
+        </activation>
+
+        <dialog text="$l10n_tour_text_part02_enoughCultivating">
+            <input name="TOGGLE_AI" text="$l10n_input_TOGGLE_AI" />
+        </dialog>
+
+        <goal>
+            <check name="vehicleIsMotorStarted" vehicle="tourTractor1" />
+            <check name="vehicleIsAIActive" vehicle="tourTractor1" />
+        </goal>
+    </step>
+
+    <step>
+        <dialog text="$l10n_tour_text_part02_finished">
+            <input name="SWITCH_VEHICLE" text="$l10n_input_SWITCH_VEHICLE" />
+            <input name="SWITCH_VEHICLE_BACK" text="$l10n_input_SWITCH_VEHICLE_BACK" />
+        </dialog>
+    </step>
+
+<!-- Sowing -->
+    <!-- Icon next to the sowing tractor -->
+    <step>
+        <activation>
+            <icon position="355 145" targetIndicator="true" />
+        </activation>
+
+        <dialog text="$l10n_tour_text_part03_enterTractor01">
+            <input name="ENTER" text="$l10n_input_ENTER" />
+            <input name="ATTACH" text="$l10n_input_ATTACH" />
+        </dialog>
+
+        <goal>
+            <check name="vehicleIsControlled" vehicle="tourTractor2" />
+            <check name="vehicleAttachedTo" vehicle="tourSowingMachine" toVehicle="tourTractor2" />
+            <check name="vehicleAttachedTo" vehicle="tourWeight2" toVehicle="tourTractor2" />
+        </goal>
+    </step>
+
+    <step>
+        <dialog text="$l10n_tour_text_part03_startSowing">
+            <input name="IMPLEMENT_EXTRA3" text="$l10n_action_chooseSeed" />
+            <input name="LOWER_IMPLEMENT" text="$l10n_input_LOWER_IMPLEMENT" />
+            <input name="IMPLEMENT_EXTRA" text="$l10n_action_turnOn" />
+        </dialog>
+    </step>
+
+    <!-- Further down the field -->
+    <step>
+        <activation>
+            <icon position="322 142" targetIndicator="true" />
+        </activation>
+
+        <dialog text="$l10n_tour_text_part03_finished">
+            <input name="SWITCH_VEHICLE" text="$l10n_input_SWITCH_VEHICLE" />
+            <input name="SWITCH_VEHICLE_BACK" text="$l10n_input_SWITCH_VEHICLE_BACK" />
+        </dialog>
+    </step>
+
+<!-- trailer / tipping and selling -->
+    <!-- Icon next to the trailer tractor -->
+    <step>
+        <activation>
+            <icon position="240 152" targetIndicator="true" />
+        </activation>
+
+        <dialog text="$l10n_tour_text_part04_enterTractor01">
+            <input name="ENTER" text="$l10n_input_ENTER" />
+            <input name="ATTACH" text="$l10n_input_ATTACH" />
+        </dialog>
+
+        <goal>
+            <check name="vehicleIsControlled" vehicle="tourTractor3" />
+            <check name="vehicleAttachedTo" vehicle="tourTrailer" toVehicle="tourTractor3" />
+        </goal>
+    </step>
+
+
+    <step>
+        <dialog text="$l10n_tour_text_part04_alignToHarvester">
+            <input name="TOGGLE_COVER" text="$l10n_input_TOGGLE_COVER" />
+        </dialog>
+
+        <goal>
+            <check name="fillLevelAbove" vehicle="tourTrailer" fillUnit="1" fillLevel="1000" />
+        </goal>
+    </step>
+
+    <step>
+        <dialog text="$l10n_tour_text_part04_unloadWheat">
+            <input name="TOGGLE_COVER" text="$l10n_input_TOGGLE_COVER" />
+        </dialog>
+    </step>
+
+
+<!-- Icon next to the sellpoint -->
+    <step>
+        <activation>
+            <icon position="-888 -643" targetIndicator="true" />
+        </activation>
+
+        <dialog text="$l10n_tour_text_part04_pricesInfo">
+            <input name="MENU" text="$l10n_input_MENU" />
+        </dialog>
+    </step>
+
+    <step>
+        <dialog text="$l10n_tour_text_part04_sellWheat">
+            <input name="UNLOAD" text="$l10n_input_UNLOAD" />
+        </dialog>
+
+        <goal>
+            <check name="fillLevelBelow" vehicle="tourTrailer" fillUnit="1" fillLevel="10" />
+        </goal>
+    </step>
+
+    <step>
+        <dialog text="$l10n_tour_text_part04_doneSelling">
+            <input name="TOGGLE_COVER" text="$l10n_input_TOGGLE_COVER" />
+        </dialog>
+    </step>
+
+    <step>
+        <activation>
+            <icon position="836 58" targetIndicator="true" />
+        </activation>
+
+        <dialog text="$l10n_tour_text_part05_visitShop">
+            <input name="TOGGLE_STORE" text="$l10n_input_TOGGLE_STORE" />
+        </dialog>
+    </step>
+
+    <step>
+        <dialog text="$l10n_tour_text_end">
+            <input name="MENU" text="$l10n_input_MENU" />
+        </dialog>
+    </step>
+
+</guidedTour>
