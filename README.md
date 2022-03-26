@@ -57,7 +57,7 @@ This template is free to use, modify and distribute.
 
 However, you must credit the original creator.
 
-Please add this information into your ModDesc.xml and map.xml
+Please add this information into your modDesc.xml and map.xml
 ```xml
 <!-- Based on 4kmHDModMapTemplate from Katten_Hanna-->
 <!-- Source: https://github.com/Katten-Hanna/FS22-4km-HD-ModMap-Template -->
