@@ -42,6 +42,7 @@ https://github.com/Katten-Hanna/FS22-4km-HD-ModMap-Template/releases
 
 
 # Known issues
+- **The editor takes a long time to save.** The editor way freeze for up to a minute when pressing "save". **Give it time and it will return to normal.**
 - The editor is laggy when in paint mode. This is an issue with the editor with 8192x8192 weight files. Don't worry. This doesn't happen in game
 - The loading screen in game takes a liitle longer. This only happens the first time you run it.
 - The first 20 seconds of game play (after the loading screen) may stutter. Give everything time to load in and this issue goes away.
