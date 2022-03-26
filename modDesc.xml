@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<!-- Based on 4kmHDModMapTemplate from Katten_Hanna-->
+<!-- Source: https://github.com/Katten-Hanna/FS22-4km-HD-ModMap-Template -->
 <modDesc descVersion="63">
     <author>Katten Hanna</author>
     <version>1.0.0.0</version>
@@ -38,3 +40,4 @@
 	
 
 </modDesc>
+
