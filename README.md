@@ -23,7 +23,8 @@ An easy to use template for making HD mod maps in Farming Simulator 22
 
   
 # Recommended Mods
-- Power Tools (from the in game ModHub)
+- Power Tools (in-game ModHub)
+- Free landscaping tools (in-game ModHub)
    
 # Download Link
    
