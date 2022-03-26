@@ -17,9 +17,11 @@ An easy to use template for making HD mod maps in Farming Simulator 22
 3. Enjoy modding your own HD 4K map
 
 # How to use (Export to FS22 GAME):
-- Copy **FS22_4kmModMapTemplate.zip** to **C:\Users\YOUR_USER\Documents\My Games\FarmingSimulator2022\mods**
-- Run the mod in a new save in New Farmer mode. 
-- <<IMPORTANT: While the game will load and is somewhat playable, this is currently for testing only!>>
+1. Copy **FS22_4kmModMapTemplate.zip**
+2. Paste to **C:\Users\YOUR_USER\Documents\My Games\FarmingSimulator2022\mods**
+3. Run the mod in a new save in New Farmer mode. 
+
+- **IMPORTANT: While the game will load and is somewhat playable, this is currently for testing only!**
 
   
 # Recommended Mods
@@ -50,4 +52,5 @@ https://github.com/Katten-Hanna/FS22-4km-HD-ModMap-Template/releases
 
 
 
-# If you like this, you are free to change and use it. But please give me credit in your source code.
+# Licence
+
