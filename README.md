@@ -1,4 +1,4 @@
-# FS22-4km-HD-ModMap-Template
+# Farming Simulator 22 - 4km HD ModMap Template
 An easy to use template for making HD mod maps in Farming Simulator 22
 
 
