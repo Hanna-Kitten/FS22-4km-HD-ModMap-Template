@@ -181,30 +181,5 @@
         <groundTypeMapping type="49_USanimalMud"      title="ANIMAL MUD (US)" layer="US_ANIMALMUD" />
         <groundTypeMapping type="50_FRanimalMud"      title="ANIMAL MUD (FR)" layer="FR_ANIMALMUD" />
         <groundTypeMapping type="51_ALPanimalMud"      title="ANIMAL MUD (ALP)" layer="ALP_ANIMALMUD" />
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <!-- Special -->
-        
-
-
-
-
     </groundTypeMappings>
 </map>
