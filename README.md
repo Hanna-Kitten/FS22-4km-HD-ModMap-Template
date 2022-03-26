@@ -8,7 +8,7 @@ An easy to use template for making HD mod maps in Farming Simulator 22
 - All ground textures (200+ textures and 50+ combined layers) from all 3 FS22 stock maps are made available in this map (No more limitations)
 - All textures are placed on the map at 2x resolution.
 - Drawing "perfect" diagonal lines is now possible: No more "terrain stepping"
-- All ground textures are placable from the shop menu!
+- All ground textures are placeable from the shop menu!
 - The whole map is owned by the player in "new farmer mode".
 
 # How to use (Import to GIANTS EDITOR):
