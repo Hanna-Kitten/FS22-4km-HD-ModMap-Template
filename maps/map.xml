@@ -1,4 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<!-- Based on 4kmHDModMapTemplate from Katten_Hanna-->
+<!-- Source: https://github.com/Katten-Hanna/FS22-4km-HD-ModMap-Template -->
+
 <map width="4096" height="4096" imageFilename="maps/overview.png"  mapFieldColor="0.1500 0.1195 0.0953" mapGrassFieldColor="0.1470 0.1441 0.0823">
     <filename>maps/map.i3d</filename>
     <vertexBufferMemoryUsage>136077568</vertexBufferMemoryUsage>
