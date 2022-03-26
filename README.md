@@ -58,8 +58,10 @@ This template is free to use, modify and distribute.
 However, you must credit the original creator.
 
 Please add this information into your ModDesc.xml and map.xml
-"<!-- Based on the 4kmModMapTemplate from Katten_Hanna-->"
-"<!-- Source: https://github.com/Katten-Hanna/FS22-4km-HD-ModMap-Template -->"
+```xml
+<!-- Based on the 4kmModMapTemplate from Katten_Hanna-->
+<!-- Source: https://github.com/Katten-Hanna/FS22-4km-HD-ModMap-Template -->
+```
 
 
 
